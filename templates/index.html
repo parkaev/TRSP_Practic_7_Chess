@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chess Sync</title>
+    <script src="https://cdn.socket.io/4.0.0/socket.io.min.js"></script>
+    <link rel="stylesheet" href="../static/styles.css">
+</head>
+<body>
+
+<div style="text-align: center; margin-top: 10px;">
+    <label for="username">Имя:</label>
+    <input class="input-str" type="text" id="username" placeholder="Ваше имя">
+</div>
+
+<div id="board"></div>
+
+<div class="chat-container">
+    <div id="chat" class="chat-box"></div>
+    <form id="chat-form" class="chat-form">
+        <input type="text" id="chat-input" placeholder="Введите сообщение..." autocomplete="off">
+        <button type="submit">Отправить</button>
+    </form>
+</div>
+
+
+<script src="/static/chess.js"></script>
+</body>
+</html>
